@@ -1,0 +1,102 @@
+.bg-color1{
+    background-color: #153462;
+}
+.color1{
+   color: #153462;
+}
+
+.color2{
+    color: #4FA095;
+}
+.bg-color2{
+    background-color: #4FA095;
+}
+
+.color3{
+    color: #BAD1C2;
+}
+.bg-color3{
+    background-color: #BAD1C2;
+}
+
+.bg-color4{
+    background-color: #F6F6C9 !important;
+}
+.color4{
+    color: #F6F6C9;
+}
+
+.logo-header{
+    height: 7rem;
+    width: auto;
+}
+
+
+.search{
+    height: 1.5rem;
+    width: auto;
+    border-radius: 25px;
+}
+
+.txt{
+    font-size: 22px !important;
+    font: caption;
+}
+.txt2{
+    font-size: 17px !important;
+    font: caption;
+}
+
+.carousel-img{
+    height: 45rem!important;
+}
+
+.home-info{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 2rem;
+}
+
+.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparan arka plan rengi */
+  }
+
+  .card-btn{
+    border-radius: 25px;
+  }
+  .card-btn:hover{
+    background: #153462 !important;
+    color:#BAD1C2 !important;
+  }
+
+  .login{
+    margin: 15%;
+  }
+
+  .login-input{
+    border-radius: 25px;
+    height: 3rem;
+    width: auto;
+
+  }
+.login-input:focus{
+
+    border: 4px solid #4FA095 !important;
+    box-shadow: 0 0 0 0.2rem #BAD1C2;
+    z-index: 2;
+    outline: none;
+
+  }
+
+.foother-margin{
+    margin: 8%;
+}
+
+.btn-foother:hover{
+    background-color: #BAD1C2;
+    border:3px solid #95a79b;
+}
+
+.btn-foother{
+    border-radius: 60%;
+}
