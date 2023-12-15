@@ -15,7 +15,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -44,12 +44,24 @@
 
 
                 <div class="d-flex col-10 justify-content-start">
-                    <a href="#" class="text-decoration-none txt color4 text-start ms-4 me-3">Yoga</a>
+
+                    <div class="dropdown  text-start ms-4 me-3">
+                        <a class=" dropdown-toggle text-decoration-none txt color4" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Yoga
+                        </a>
+
+                        <ul class="dropdown-menu bg-color4 color1 " aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item dropDownPlates" href="#">Yoga</a></li>
+                          <li><a class="dropdown-item dropDownPlates" href="#">Hamak Yogası</a></li>
+                          <li><a class="dropdown-item dropDownPlates" href="#">Hamile Yogası</a></li>
+                          <li><a class="dropdown-item dropDownPlates" href="#">Çocuk Yogası</a></li>
+                        </ul>
+                      </div>
+
                     <a href="#" class="text-decoration-none txt color4 text-start me-3">Plates</a>
                     <a href="#" class="text-decoration-none txt color4 text-start me-3">Tedavi</a>
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Atölye+Kurs</a>
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Öğretmenler</a>
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Atölye+Kurs</a>
+                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Kadınlara Özel</a>
+
                 </div>
 
 
@@ -79,47 +91,49 @@
         </div>
     </header>
 
-
-
-    <div class="carousel-inner ">
-        <div class="carousel-item active">
-            <img src="plates1.jpg" class="d-block w-100 carousel-img" alt="...">
-
-            <div class="carousel-caption d-none d-md-block">
-                <h2>First slide label</h2>
-                <h3>Some representative placeholder content for the third slide.</h3>
-            </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="plates1.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="plates2.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h2>Second slide label</h2>
-                <h3>Some representative placeholder content for the third slide.</h3>
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
             </div>
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="plates3.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h2>Third slide label</h2>
-                <h3>Some representative placeholder content for the third slide.</h3>
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
+          </div>
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
 
     </div>
     </div>
     <div class="row m-4 p-4">
         <div class="d-flex col justify-content-center m-4 p 4">
-            <h1 class="text-center">Londra Yoga</h1>
+            <h1 class="text-center">YOGAHAMSA</h1>
         </div>
         <hr class="my-4">
         <p class="home-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ex fugiat, perspiciatis
@@ -203,7 +217,7 @@
 
     <hr class="my-4">
 
-    <div class="row col foother-margin">
+    <div class="row col foother-margin" style="position: absolite;">
         <div class="flex col-8">
             <h3>HAKKIMIZDA</h3>
             <H5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, facilis maiores! Sed tempore
@@ -226,7 +240,7 @@
                 <a href="" class="btn btn-foother"><img src="youtube.png" alt=""></a>
             </div>
             <div class="d-flex">
-                <img src="logo.png" style="width: 400px;height: auto" alt="">
+                <img src="logo.png" style="width: 200px;height: auto;position: absolite;" alt="">
             </div>
         </div>
     </div>

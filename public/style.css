@@ -48,7 +48,7 @@
 }
 
 .carousel-img{
-    height: 45rem!important;
+    height: 60rem!important;
 }
 
 .home-info{
@@ -133,3 +133,6 @@
     filter: blur(5px); /* Blur miktarını isteğinize göre ayarlayın */
   }
 
+.dropDownPlates:hover{
+    background-color: #95a79b !important;
+}
