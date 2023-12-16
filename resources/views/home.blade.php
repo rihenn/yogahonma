@@ -98,21 +98,23 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active resim-container" data-bs-interval="10000">
+
             <img src="plates1.jpg" class="d-block w-100 carousel-img" alt="...">
+
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item resim-container" data-bs-interval="2000">
             <img src="plates2.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item resim-container">
             <img src="plates3.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
@@ -198,12 +200,15 @@
 
     <div class="foother login">
         <div class="row col  aling-item-start ms-4 ">
+            <div class="row col-3">
+                <img src="plates5.jpg" alt="">
+            </div>
             <div class="flex col-5 justify-content-start ">
                 <h2>EN YENİ GELİŞMELER</h2>
                 <h4>için kaydolun size haber verelim en yeni gelişmelerden haberdar olmak için...</h4>
             </div>
 
-            <div class="flex col-6 justify-content-end ms-4">
+            <div class="flex col-4 justify-content-end ms-4">
                 <div class="flex col justify-content-end ms-4">
                     <form action="#">
                         <input type="text" class="row text-center login-input" placeholder="your name">
@@ -217,29 +222,38 @@
 
     <hr class="my-4">
 
-    <div class="row col foother-margin" style="position: absolite;">
-        <div class="flex col-8">
-            <h3>HAKKIMIZDA</h3>
-            <H5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, facilis maiores! Sed tempore
-                corrupti sunt reprehenderit, odio aliquam similique obcaecati accusantium minima nam. Dolore, harum
-                dolorum nobis voluptatem quae assumenda.
-                Numquam nesciunt blanditiis dolores fuga, accusamus, laudantium at ab reprehenderit, est animi sapiente
-                vel non modi tempore repellendus? Officia labore eius repellendus consequuntur recusandae perspiciatis
-                numquam dicta hic libero nisi.
-                Laboriosam nihil alias enim sed. Dolores ab temporibus delectus fuga in, dignissimos necessitatibus
-                harum, ipsam nemo laboriosam maiores magni, aperiam commodi quasi iusto quo? Voluptatibus eos ut sed
-                atque aliquid.
-                Repudiandae architecto mollitia atque. Consectetur iste nesciunt ipsum, inventore delectus quidem minus
-                excepturi ad quia, quisquam voluptatum velit enim a hic deserunt voluptatibus sed! Nostrum minus
-                voluptatum iure vel qui.</H5>
+    <div class="row col foother-margin r" style="position: absolite;">
+        <div class="row col-9 justify-content-center">
+            <div class="flex col-3">
+            <h3>KURUMSAL</h3>
+                <ul>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Neden Yogahamsa ?</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Vizyon ve Misyon</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Gizlilik ve Güvenlik Politikası</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Çerez Yönetimi</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Hakkımızda</a></li>
+                </ul>
+            </div>
+            <div class="flex col-3 ms-3">
+            <h3>ÜYRLİK VE SİPARİŞLER</h3>
+                <ul>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Üye Girişi</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Yeni Üyelik</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Siparişlerim</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">KVKK Kanunu Aydınlatma Metni</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">Mesafeli Satış Sözleşmesi</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">İade Şartları</a></li>
+                    <li> <a href="#" class="text-decoration-none color1" style="font-size: 22px">İletişim</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="flex col-3">
+        <div class="flex col-3 ms-4">
             <div class="d-flex ms-4 mt-4">
                 <a href="" class="btn btn-foother"><img src="instagram.png" alt=""></a>
                 <a href="" class="btn btn-foother"><img src="facebook-app-symbol.png" alt=""></a>
                 <a href="" class="btn btn-foother"><img src="youtube.png" alt=""></a>
             </div>
-            <div class="d-flex">
+            <div class="d-flex justify-conten-center">
                 <img src="logo.png" style="width: 200px;height: auto;position: absolite;" alt="">
             </div>
         </div>
@@ -271,7 +285,7 @@
         });
         $(document).ready(function() {
             $("#search").click(function() {
-                console.log("merhaba dünya");
+
                 $("#overlay").show().addClass("blur");
                 document.getElementById("card").setAttribute("style", "display: block;");
                 $("#card").animate({
