@@ -37,20 +37,22 @@
 
     <header class="bg-transparent fixed-top header" id="header">
         <div class="d-flex col-12" name="logo">
+            <div style="background: white;border-radius: 100%;padding: 0;">
             <a href="#">
                 <img src="logo.png" class="logo-header" style="margin:0;">
             </a>
+            </div>
             <div class="d-flex col-11 align-items-center mt-2">
 
 
                 <div class="d-flex col-10 justify-content-start">
 
                     <div class="dropdown  text-start ms-4 me-3">
-                        <a class=" dropdown-toggle text-decoration-none txt color4" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class=" dropdown-toggle text-decoration-none txt " name="limk1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                           Yoga
                         </a>
 
-                        <ul class="dropdown-menu bg-color4 color1 " aria-labelledby="dropdownMenuLink">
+                        <ul class="dropdown-menu bg-color4" aria-labelledby="dropdownMenuLink">
                           <li><a class="dropdown-item dropDownPlates" href="#">Yoga</a></li>
                           <li><a class="dropdown-item dropDownPlates" href="#">Hamak Yogası</a></li>
                           <li><a class="dropdown-item dropDownPlates" href="#">Hamile Yogası</a></li>
@@ -58,21 +60,21 @@
                         </ul>
                       </div>
 
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Plates</a>
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Tedavi</a>
-                    <a href="#" class="text-decoration-none txt color4 text-start me-3">Kadınlara Özel</a>
+                    <a href="#" class="text-decoration-none txt  text-start me-3" name="limk2">Plates</a>
+                    <a href="#" class="text-decoration-none txt  text-start me-3" name="limk3">Tedavi</a>
+                    <a href="#" class="text-decoration-none txt  text-start me-3" name="limk4">Kadınlara Özel</a>
 
                 </div>
 
 
                 <div class="d-flex col-2 justify-content-end">
-                    <a href="#"><img src="shop-icon.png" width="32" height="32" class=" me-3"></a>
-                    <a href="#" id="search"><img src="search.png" width="32" height="32" class=" me-3"></a>
+                    <a href="#"><img id="shop" src="shop-icon.png" width="32" height="32" class=" me-3"></a>
+                    <a href="#" id="search"><img id="search1" src="search.png" width="32" height="32" class=" me-3"></a>
 
                     <div class="dropdown text-end">
                         <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="user.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                            <img src="user.png" id="user" alt="mdo" width="32" height="32" class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu text-small shadow">
                             <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -103,22 +105,22 @@
             <img src="plates1.jpg" class="d-block w-100 carousel-img" alt="...">
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5 class="imgText" >First slide label</h5>
+              <p class="imgText">Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item resim-container" data-bs-interval="2000">
             <img src="plates2.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5 class="imgText">Second slide label</h5>
+              <p class="imgText">Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item resim-container">
             <img src="plates3.jpg" class="d-block w-100 carousel-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5 class="imgText">Third slide label</h5>
+              <p class="imgText">Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
@@ -194,14 +196,14 @@
         </div>
     </div>
     </div>
-    <div class="d-flex col justify-content-center">
-        <img src="plates4.jpg" style="width: 60%" alt="">
+    <div class="d-flex col justify-content-center" >
+        <img src="plates4.jpg" style="width: 60%" alt="" >
     </div>
 
     <div class="foother login">
         <div class="row col  aling-item-start ms-4 ">
             <div class="row col-3">
-                <img src="plates5.jpg" alt="">
+                <img src="plates5.jpg" alt="" style=" border-radius: 10%;">
             </div>
             <div class="flex col-5 justify-content-start ">
                 <h2>EN YENİ GELİŞMELER</h2>
@@ -261,17 +263,36 @@
     <div class="overlay" id="overlay"></div>
 
     <script>
+         var user1 = "user1.png";
+         var search1 = "search1.png";
+         var shop1 = "shop-icon1.png";
+         var user = "user.png";
+         var search = "search.png";
+         var shop = "shop-icon.png";
+
         $(document).ready(function() {
             var navbar = $("#header");
 
             $(window).scroll(function() {
 
                 if ($(this).scrollTop() > 50) {
-                    navbar.addClass("bg-color1");
+                    navbar.addClass("bg-color5");
+                    $('#header a').addClass("color4");
+
+                    document.getElementById("shop").setAttribute("src", shop1);
+                    document.getElementById("search1").setAttribute("src", search1);
+                    document.getElementById("user").setAttribute("src", user1);
+
                     navbar.removeClass("bg-transparent");
+                    $('#header a').removeClass("color6");
                 } else {
                     navbar.addClass("bg-transparent");
-                    navbar.removeClass("bg-color1");
+                    $('#header a').addClass("color6");
+                    document.getElementById("shop").setAttribute("src", shop);
+                    document.getElementById("search1").setAttribute("src", search);
+                    document.getElementById("user").setAttribute("src", user);
+                    navbar.removeClass("bg-color5");
+                    $('#header a').removeClass("color4");
                 }
             });
 
